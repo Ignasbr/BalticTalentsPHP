@@ -5,7 +5,7 @@ $a = [[3, 4, 5], [2, 10, 8], [2, 6, 5], [5, 5, 5]];
 foreach ($a as $trk) {
 
     $info = 'Tai ne trikampis ';
-    $tipas = '-';
+    $tipas = '';
     $plotas = '';
 
     if ($trk[0] + $trk[1] > $trk[2] && $trk[1] + $trk[2] > $trk[0] && $trk[0] + $trk[2] > $trk[1]) {
