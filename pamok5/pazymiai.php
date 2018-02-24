@@ -8,28 +8,24 @@ $mokiniai = [
 
 ];
 
-foreach($mokiniai as $mokinys){
+foreach($mokiniai as $mokinys) {
 
-//    foreach ($mokinys['pazymiai']['lietuviu'] as $lietuviu){
-//
-//    }
 }
-
-//foreach($mokinys['pazymiai']['lietuviu'] as $dalykas){
-//
-//}
-
-
 
 $lietuviuVidJonas = array_sum($mokiniai[0]['pazymiai']['lietuviu']) / 2;
 $matematikaVidJonas = array_sum($mokiniai[0]['pazymiai']['matematika']) / 2;
 $lietuviuVidOna = array_sum($mokiniai[1]['pazymiai']['lietuviu']) / 2;
 $matematikaVidOna = array_sum($mokiniai[1]['pazymiai']['matematika']) / 2;
 
+$vidurkisJonas = $lietuviuVidJonas + $matematikaVidJonas / 2 ;
+$vidurkisOna = $lietuviuVidOna + $matematikaVidOna / 2 ;
+
 
 echo 'Vardas: ' . ($mokiniai[0]['vardas']) . '<br>' .
     'Lietuviu pazymiai: ' . implode(',', $mokiniai[0]['pazymiai']['lietuviu']) . ' ' . 'Vidurkis: ' . $lietuviuVidJonas . '<br>' .
     'Matematikos pazymiai: ' . implode(',', $mokiniai[0]['pazymiai']['matematika']) . ' ' . 'Vidurkis: ' . $matematikaVidJonas . '<br>' .
-    'Vardas: ' . ($mokiniai[0]['vardas']) . '<br>' .
+    'Vardas: ' . ($mokiniai[1]['vardas']) . '<br>' .
     'Lietuviu pazymiai: ' . implode(',', $mokiniai[1]['pazymiai']['lietuviu']) . ' ' . 'Vidurkis: ' . $lietuviuVidOna . '<br>' .
-    'Matematikos pazymiai: ' . implode(',', $mokiniai[1]['pazymiai']['matematika']) . ' ' . 'Vidurkis: ' . $matematikaVidOna . '<br>';
+    'Matematikos pazymiai: ' . implode(',', $mokiniai[1]['pazymiai']['matematika']) . ' ' . 'Vidurkis: ' . $matematikaVidOna . '<br>' .
+    'Bendras ' .  ($mokiniai[0]['vardas']) . ' ' .  'vidurkis: '  . $vidurkisJonas . '<br>' .
+    'Bendras ' .  ($mokiniai[1]['vardas']) . ' ' .  'vidurkis: '  . $vidurkisOna . '<br>';
