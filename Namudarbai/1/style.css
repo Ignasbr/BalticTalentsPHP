@@ -1,0 +1,34 @@
+table {
+    margin-top: 100px;
+}
+
+th {
+    font-size: 30px;
+    font-weight: 550;
+    background-color: #2980b9;
+    color: white;
+}
+
+td {
+    color: #28a745;
+}
+
+.vaisiai {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 450px;
+}
+
+.foto {
+    height: 150px;
+    width: 200px;
+}
+
+.btn {
+    font-size: 22px;
+    width: 150px;
+}
