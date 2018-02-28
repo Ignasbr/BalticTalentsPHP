@@ -1,12 +1,12 @@
 <?php
 require 'Radar.php';
 
-$automobiliai = [new Radar(new \DateTime('2016-04-23'), 'HNR-843', 300, 4),
-                new Radar(new \DateTime('2018-01-29'), 'BBA-335', 3200, 40),
-                new Radar(new \DateTime('2017-09-15'), 'ADC-525', 700, 9),
-                new Radar(new \DateTime('2017-05-21'), 'GDA-593', 1220, 20),
-                new Radar(new \DateTime('2017-08-30'), 'HUE-650', 70, 3),
-                new Radar(new \DateTime('2017-11-13'), 'NOR-499', 4000, 25)];
+$automobiliai = [new Radar(new \DateTime('2016-04-23'), 'HNR-843', 100000, 70),
+                new Radar(new \DateTime('2018-01-29'), 'BBA-335', 320000, 400),
+                new Radar(new \DateTime('2017-09-15'), 'ADC-525', 7043000, 9030),
+                new Radar(new \DateTime('2017-05-21'), 'GDA-593', 1224330, 2033),
+                new Radar(new \DateTime('2017-08-30'), 'HUE-650', 7004340, 3434),
+                new Radar(new \DateTime('2017-11-13'), 'NOR-499', 4000433, 2530)];
 
 
 usort($automobiliai, function (Radar $auto1, Radar $auto2) {
